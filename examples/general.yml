@@ -1,0 +1,10 @@
+apiInfoOk:
+  value:
+    version: 2.0.0
+    production: true
+    settings:
+      invites: false
+      namespace_id_rules:
+        min_length: 1
+        max_length: 32
+        allowed_characters: abcdefghijklmnopqrstuvwxyz0123456789_
