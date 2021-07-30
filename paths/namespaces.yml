@@ -1,4 +1,5 @@
 get:
+  tags: [Namespaces]
   summary: Get Namespaces
   description: Gets all namespaces
   parameters:
@@ -21,6 +22,7 @@ get:
             $ref: "../examples/schemas/Namespaces.yml"
 
 post:
+  tags: [Namespaces]
   summary: Create Namespace
   description: Creates a namespace
   requestBody:

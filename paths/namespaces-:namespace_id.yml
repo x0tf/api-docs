@@ -1,4 +1,5 @@
 get:
+  tags: [Namespaces]
   summary: Get Namespace
   description: Get a single namespace
   parameters:
@@ -18,6 +19,7 @@ get:
             $ref: "../examples/schemas/Namespace.yml"
 
 patch:
+  tags: [Namespaces]
   summary: Edit Namespace
   description: Edit a namespace
   parameters:
@@ -44,6 +46,7 @@ patch:
           $ref: "../examples/schemas/Namespace.yml"
 
 delete:
+  tags: [Namespaces]
   summary: Delete Namespace
   description: Delete a namespace
   parameters:
