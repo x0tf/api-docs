@@ -1,0 +1,56 @@
+get:
+  summary: Get Namespace
+  description: Get a single namespace
+  parameters:
+    - name: namespace_id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    "200":
+      description: Requested Namespace
+      content:
+        application/json:
+          schema:
+            $ref: "../components/schemas/Namespace.yml"
+          examples:
+            $ref: "../examples/schemas/Namespace.yml"
+
+patch:
+  summary: Edit Namespace
+  description: Edit a namespace
+  parameters:
+    - name: namespace_id
+      in: path
+      required: true
+      schema:
+        type: string
+  requestBody:
+    description: Fields to change on the namespace
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../components/requestBodies/NamespacePatch.yml"
+        examples:
+          $ref: "../examples/requestBodies/NamespacePatch.yml"
+  responses:
+    "200":
+      application/json:
+        schema:
+          $ref: "../components/schemas/Namespace.yml"
+        examples:
+          $ref: "../examples/schemas/Namespace.yml"
+
+delete:
+  summary: Delete Namespace
+  description: Delete a namespace
+  parameters:
+    - name: namespace_id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    "200": {}

@@ -1,5 +1,5 @@
 get:
-  summary: Get namespaces
+  summary: Get Namespaces
   description: Gets all namespaces
   parameters:
     - name: limit
@@ -21,10 +21,9 @@ get:
             $ref: "../examples/schemas/Namespaces.yml"
 
 post:
-  summary: Create namespace
+  summary: Create Namespace
   description: Creates a namespace
   requestBody:
-    description: Namespace to create
     required: true
     content:
       application/json:
