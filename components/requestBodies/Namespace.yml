@@ -1,0 +1,9 @@
+type: object
+required: [id]
+properties:
+  id:
+    type: string
+    description: Namespace ID, allowed characters can be taken from the API information
+  invite_code:
+    type: string
+    description: Code to create a namespace, whether it is required is stated in the API information

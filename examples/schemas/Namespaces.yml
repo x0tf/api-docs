@@ -1,0 +1,12 @@
+Namespaces:
+  value:
+    data:
+      - id: "example-namespace"
+        active: true
+        created: 1627681524
+      - id: "other-namespace"
+        active: false
+        created: 1627681626
+    pagination:
+      total_elements: 50
+      displayed_elements: 10

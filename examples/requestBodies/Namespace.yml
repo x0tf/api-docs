@@ -1,0 +1,8 @@
+Create Namespace:
+  value:
+    id: "example-namespace"
+
+Create Namespace (invites enabled):
+  value:
+    id: "example-namespace"
+    invite_code: "8L3cCdf5sBqgAFhveFIhVSukjHkD7ETI"

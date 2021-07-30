@@ -1,0 +1,9 @@
+type: object
+required: [data, pagination]
+properties:
+  data:
+    type: array
+    items:
+      $ref: "./Namespace.yml"
+  pagination:
+    $ref: "./Pagination.yml"

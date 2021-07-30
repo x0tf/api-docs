@@ -1,0 +1,6 @@
+type: object
+required: [id, token, active, created]
+properties:
+  token:
+    type: string
+  $ref: "./Namespace.yml#/properties"

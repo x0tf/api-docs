@@ -1,0 +1,7 @@
+type: object
+required: [total_elements, displayed_elements]
+properties:
+  total_elements:
+    type: integer
+  displayed_elements:
+    type: integer

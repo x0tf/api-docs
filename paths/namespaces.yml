@@ -1,0 +1,43 @@
+get:
+  summary: Get namespaces
+  description: Gets all namespaces
+  parameters:
+    - name: limit
+      in: query
+      schema:
+        type: int
+    - name: skip
+      in: query
+      schema:
+        type: int
+  responses:
+    "200":
+      description: Array of all namespaces
+      content:
+        application/json:
+          schema:
+            $ref: "../components/schemas/Namespaces.yml"
+          examples:
+            $ref: "../examples/schemas/Namespaces.yml"
+
+post:
+  summary: Create namespace
+  description: Creates a namespace
+  requestBody:
+    description: Namespace to create
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "../components/requestBodies/Namespace.yml"
+        examples:
+          $ref: "../examples/requestBodies/Namespace.yml"
+  responses:
+    "200":
+      description: Created namespace including token
+      content:
+        application/json:
+          schema:
+            $ref: "../components/schemas/NamespaceCreated.yml"
+          examples:
+            $ref: "../examples/schemas/NamespaceCreated.yml"

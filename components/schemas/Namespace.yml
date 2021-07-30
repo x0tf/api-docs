@@ -1,0 +1,11 @@
+type: object
+required: [id, active, created]
+properties:
+  id:
+    type: string
+    description: Namespace ID, allowed characters can be taken from the API information
+  active:
+    type: bool
+  created:
+    type: integer
+    description: Creation time of this namespace as a UNIX timestamp

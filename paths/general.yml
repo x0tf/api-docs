@@ -1,9 +1,0 @@
-/info:
-  get:
-    summary: API Information
-    description: Get information about the running API and its settings
-    responses:
-      "200":
-        description: API Information
-        content:
-          $ref: "../content/general.yml/#/apiInfoOk"

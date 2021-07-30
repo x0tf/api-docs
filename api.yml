@@ -4,4 +4,11 @@ info:
   version: 2.0.0
 
 paths:
-  $ref: "paths/general.yml"
+  /info:
+    $ref: "paths/info.yml"
+  /namespaces:
+    $ref: "paths/namespaces.yml"
+  /namespaces/{namespace_id}:
+    $ref: "paths/namespaces-:namespace_id.yml"
+  /namespaces/{namespace_id}/reset_token:
+    $ref: "paths/namespaces-:namespace_id-reset_token.yml"

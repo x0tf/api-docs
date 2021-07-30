@@ -1,0 +1,25 @@
+type: object
+required: [version, production, settings]
+properties:
+  version:
+    type: string
+    description: Version of running API as a semantic version
+  production:
+    type: bool
+  settings:
+    type: object
+    required: [invites, namespace_id_rules]
+    properties:
+      invites:
+        type: bool
+      namespace_id_rules:
+        type: object
+        required: [min_length, max_length, allowed_characters]
+        properties:
+          min_length:
+            type: integer
+          max_length:
+            type: integer
+          allowed_characters:
+            type: string
+            required: false

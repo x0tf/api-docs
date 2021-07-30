@@ -1,0 +1,12 @@
+get:
+  summary: API Information
+  description: Gets information about the running API and its settings
+  responses:
+    "200":
+      description: API Information
+      content:
+        application/json:
+          schema:
+            $ref: "../components/schemas/ApiInfo.yml"
+          examples:
+            $ref: "../examples/schemas/ApiInfo.yml"
